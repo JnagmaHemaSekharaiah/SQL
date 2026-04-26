@@ -1,0 +1,15 @@
+Retrieve all unique departments from the Employee table.
+
+1 | Ram  | A | 5000
+2 | Sam  | B | 6000
+3 | Rita | C | 7000
+4 | John | A | 5500
+5 | Anu  | B | 6500
+6 | Ravi | C | 7200
+7 | Meena| A | 5800
+
+output
+------
+A
+B
+C
