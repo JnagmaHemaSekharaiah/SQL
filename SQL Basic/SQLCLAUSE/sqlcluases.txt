@@ -1,0 +1,108 @@
+Order of execution:
+
+FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT
+
+
+
+SQL Clause
+
+===========
+
+will filtering,Grouping, Sorting data
+
+Select From where 'Group by' Haing ORDER BY LIMIT
+
+---------
+**Where**
+----------
+
+-> Filter the rows before grouping
+
+-> select , update, delete
+
+-> where support 'and' 'or' 'not' operators
+
+-> works with data from a single table or from multiple after joins.
+
+--------------
+**Group By**
+---------------
+
+-> Group the records with same value in a column.
+
+-> mostly used with Aggregate function \[ sun() count() avg() max() min() ]
+
+
+
+Rules:
+------
+
+-> Column in the 'Select' must be in 'Group By' or inside aggregate function.
+
+Ex : select **roll\_no** , sum(roll\_no) from student group by **roll\_no;**
+
+Ex : select **roll\_no** , sum(col 2) from student group by **roll\_no, col 2;**
+
+
+
+
+------------------------------
+**Having clause in group BY**
+**---------------------------**
+Filters groups after Group By
+
+
+
+---------
+Order By
+---------
+Sort the results
+Note : DESC is a key word inside used in Order by
+
+-----
+Limit
+------
+Restrict the number of rows returned
+SELECT column_name
+FROM table_name
+LIMIT n;
+
+-> Have work on the Grouped/Aggregated data
+
+
+**Using the ORDER BY Clause**
+
+**Using the HAVING Clause**
+
+**Using the LIMIT Clause**
+
+**Using the FROM Clause**
+
+**TOP**
+
+**LIKE**
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+ASC vs DESC
+Ascending (default)
+Descending
+
+Note : DESC is a key word inside used in Order by
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
