@@ -1,0 +1,137 @@
+SQL Interview Syllabus (3 Years Experience)
+
+1. Fundamentals (Must be perfect)
+----------------------------------
+Topics
+
+SELECT, WHERE, DISTINCT
+ORDER BY, LIMIT
+Basic filtering (AND, OR, IN, BETWEEN, LIKE)
+NULL handling
+
+Questions
+
+Find all employees with salary > 5000.
+Get unique departments from Employee table.
+Find employees whose name starts with 'A'.
+Get top 5 highest salaries.
+Find employees where commission is NULL.
+2. Joins (Core Interview Area)
+
+Topics
+
+INNER JOIN, LEFT JOIN, RIGHT JOIN
+SELF JOIN
+CROSS JOIN (conceptual)
+
+Questions
+
+Get employee name with department name.
+Find employees who don’t have a department.
+Find departments with no employees.
+Get manager name for each employee (self join).
+Find pairs of employees working in same department.
+3. Aggregation & GROUP BY
+
+Topics
+
+COUNT, SUM, AVG, MIN, MAX
+GROUP BY
+HAVING
+
+Questions
+
+Count employees per department.
+Find average salary per department.
+Get departments having more than 3 employees.
+Find highest salary in each department.
+Find total salary per department.
+4. Subqueries (Very Important)
+
+Topics
+
+Scalar subquery
+Correlated subquery
+IN, EXISTS
+
+Questions
+
+Find employees earning more than average salary.
+Get employees working in same department as 'A'.
+Find second highest salary using subquery.
+Get employees whose salary is greater than their manager.
+Find departments with highest average salary.
+5. Window Functions (Highly Important for 3+ yrs)
+
+Topics
+
+ROW_NUMBER()
+RANK(), DENSE_RANK()
+PARTITION BY
+LEAD(), LAG()
+
+Questions
+
+Assign row numbers to employees by salary.
+Find top 3 salaries per department.
+Find second highest salary per department.
+Compare current salary with previous employee.
+Find salary difference between employees.
+6. Advanced Aggregation
+
+Topics
+
+CASE WHEN
+Conditional aggregation
+
+Questions
+
+Count employees with salary > 5000 per department.
+Find male vs female employee count.
+Get departments where average salary > overall avg.
+Pivot salary ranges (0–5k, 5k–10k, etc.).
+Count employees hired each year.
+7. Data Modification
+
+Topics
+
+INSERT, UPDATE, DELETE
+MERGE (important in real projects)
+
+Questions
+
+Update salary by 10% for IT employees.
+Delete employees with no department.
+Insert data from one table to another.
+Merge two employee tables.
+Update manager_id using another table.
+8. Indexing & Performance (Interview Differentiator)
+
+Topics
+
+Index types
+Query optimization basics
+Execution plan (conceptual)
+
+Questions
+
+Why is a query slow on large data?
+When to use index?
+Difference between clustered vs non-clustered index.
+How to optimize JOIN query?
+What is query execution plan?
+9. Constraints & Keys
+
+Topics
+
+PRIMARY KEY, FOREIGN KEY
+UNIQUE, NOT NULL
+DEFAULT
+
+Questions
+
+Difference between PRIMARY KEY and UNIQUE.
+What happens if foreign key is violated?
+Can a table have multiple UNIQUE keys?
+Explain cascading delete.
+Design table with constraints.
