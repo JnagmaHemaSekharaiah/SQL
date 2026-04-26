@@ -1,0 +1,1 @@
+Find all employees with salary > 5000.
