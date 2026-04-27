@@ -16,7 +16,3 @@ update employees
 set salary = salary* 1.01
 where department='IT';
 
-
-update employees
-set salary = salary* 1.01
-where department='IT';
