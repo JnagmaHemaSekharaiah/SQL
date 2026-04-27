@@ -1,0 +1,115 @@
+📘 SQL Preparation Plan (for Backend Development)
+
+🎯 Total Duration: 10 Days (2–3 hours/day)
+
+------------------------------------------------------------
+🗓️ Day 1 – SQL Basics
+Topics:
+- What is Database, Table, Row, Column
+- SQL Syntax and Statements
+- SQL Data Types
+- Primary Key, Foreign Key (basic idea)
+Practice:
+- Create a simple database and a student table.
+- Insert few rows using INSERT INTO.
+
+------------------------------------------------------------
+🗓️ Day 2 – DDL (Data Definition Language)
+Topics:
+- CREATE, ALTER, DROP, TRUNCATE
+- Understanding Constraints (PRIMARY KEY, UNIQUE, NOT NULL, CHECK, DEFAULT)
+Practice:
+- Create table with constraints.
+- Alter table (add/remove column).
+- Drop and recreate a table.
+
+------------------------------------------------------------
+🗓️ Day 3 – DML (Data Manipulation Language)
+Topics:
+- INSERT, UPDATE, DELETE
+- Using WHERE condition
+- Transactions (Commit, Rollback)
+Practice:
+- Insert 10 records.
+- Update specific data.
+- Delete based on condition.
+
+------------------------------------------------------------
+🗓️ Day 4 – DQL (Data Query Language)
+Topics:
+- SELECT statement
+- WHERE clause
+- DISTINCT, ORDER BY, LIMIT/TOP
+Practice:
+- Retrieve all data.
+- Sort and filter results.
+- Use DISTINCT for unique values.
+
+------------------------------------------------------------
+🗓️ Day 5 – SQL Clauses and Aggregate Functions
+Topics:
+- GROUP BY, HAVING
+- Aggregate Functions: COUNT, SUM, AVG, MIN, MAX
+Practice:
+- Find total marks, average age, etc.
+- Filter grouped results using HAVING.
+
+------------------------------------------------------------
+🗓️ Day 6 – Joins (Very Important)
+Topics:
+- INNER JOIN
+- LEFT JOIN
+- RIGHT JOIN
+- FULL JOIN
+- SELF JOIN
+Practice:
+- Create two related tables (e.g., Students & Courses).
+- Write join queries for each type.
+
+------------------------------------------------------------
+🗓️ Day 7 – Subqueries & Views
+Topics:
+- Subquery (Nested query)
+- EXISTS, IN, NOT IN
+- Creating and using Views
+Practice:
+- Write a query inside another query.
+- Create a view and select from it.
+
+------------------------------------------------------------
+🗓️ Day 8 – Indexes, Constraints, and Keys
+Topics:
+- Indexes
+- Primary, Foreign, Composite Keys
+- Constraints review
+Practice:
+- Create index on a column.
+- Define foreign key between two tables.
+
+------------------------------------------------------------
+🗓️ Day 9 – Stored Procedures, Functions, and Triggers
+Topics:
+- Stored Procedure
+- Function
+- Trigger (before/after insert/update)
+Practice:
+- Create a procedure for inserting data.
+- Create a trigger that checks data before insert.
+
+------------------------------------------------------------
+🗓️ Day 10 – Database Design Concepts
+Topics:
+- Normalization (1NF, 2NF, 3NF)
+- Relationships: One-to-One, One-to-Many, Many-to-Many
+- ER Diagrams overview
+Practice:
+- Design small database schema (e.g., school, hospital).
+- Identify primary/foreign keys and relationships.
+
+------------------------------------------------------------
+📖 Revision & Extra Practice (After Day 10)
+- Revisit Joins, Subqueries, and GROUP BY queries.
+- Solve 10–15 real SQL interview problems (LeetCode / HackerRank).
+- Practice with a real tool like MySQL Workbench or H2 Database in Spring Boot.
+
+------------------------------------------------------------

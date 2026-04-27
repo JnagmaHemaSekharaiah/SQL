@@ -1,0 +1,52 @@
+SET Operations (Very Important)
+
+These are used to combine multiple result sets
+
+🔹 UNION
+
+👉 Combines results and removes duplicates
+
+SELECT name FROM emp1
+UNION
+SELECT name FROM emp2;
+🔹 UNION ALL
+
+👉 Combines results and keeps duplicates
+
+SELECT name FROM emp1
+UNION ALL
+SELECT name FROM emp2;
+🔹 INTERSECT
+
+👉 Returns common rows
+
+SELECT name FROM emp1
+INTERSECT
+SELECT name FROM emp2;
+
+---------------------------------------------
+
+----
+SET
+-----
+SET = “assign new value”
+
+UPDATE employees
+SET salary = salary + 10
+WHERE department = 'Finance';
+
+Note : SET is used in UPDATE statements, not SELECT.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
