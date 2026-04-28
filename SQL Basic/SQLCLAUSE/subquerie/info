@@ -1,0 +1,19 @@
+
+Subquery
+--------
+A subquery is a query inside another query.
+
+inner query runs first
+Outer query uses that result
+
+
+Types of Subquery
+-----------------
+Scalar Subquery       →   returns single value
+Multiple Row Subquery →   returns multiple rows
+Correlated Subquery   →   depends on outer query
+
+
+
+
+

@@ -14,5 +14,6 @@ INSERT INTO stduent (id, name, department, salary) VALUES
 
 delete from stduent;
 
-select * from stduent;
+select * from stduent
+order by ;
 

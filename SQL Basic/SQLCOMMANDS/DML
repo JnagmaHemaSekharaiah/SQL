@@ -1,0 +1,40 @@
+DML
+----
+DML (Data Manipulation Language) is used to work with the data
+inside tables — inserting, updating, deleting, and retrieving records.
+
+
+-------
+INSERT
+-------
+insert (add data)
+
+insert into table (column1,column2,column3)
+values (value1, value2, value3);
+
+-------
+UPDATE
+-------
+update table_name
+set column_name=value,column_name=value
+where condition;
+
+Note : Without WHERE, all rows will be updated
+
+
+------
+delete
+-------
+
+delete form table_name
+where condition;
+
+
+
+Key Points (Interview Important)
+----------------------------------
+DML deals with data, not structure
+Changes can be rolled back (unlike DDL in many cases)
+Uses transactions (COMMIT, ROLLBACK)
+
+

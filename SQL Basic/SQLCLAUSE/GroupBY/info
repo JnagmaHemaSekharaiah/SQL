@@ -1,0 +1,62 @@
+Group by
+--------
+
+It is used to group rows having the same values
+and apply aggregate functions on each group.
+
+1.Every non-aggregated column must be in GROUP BY
+-------------------------------------------------
+SELECT name, department, AVG(salary)
+FROM employees
+GROUP BY department;
+
+👉 ❌ Problem:
+
+AVG(salary) → aggregated ✅
+department → grouped ✅
+name → ❌ not aggregated and not grouped
+
+✅ Correct Query
+
+SELECT department, AVG(salary)
+FROM employees
+GROUP BY department;
+
+✅ OR include all non-aggregated columns
+SELECT name, department, AVG(salary)
+FROM employees
+GROUP BY name, department
+
+------------
+Simple Logic
+-------------
+👉 After GROUP BY, rows are grouped into one row per group
+
+So:
+
+Aggregated columns     →  summarized (AVG, SUM, etc.)
+Non-aggregated columns →  must define the group
+
+
+
+-----------------------------------
+2. WHERE vs HAVING (with GROUP BY)
+------------------------------------
+Clause	Used For
+WHERE	Filters rows before grouping
+HAVING	Filters groups after grouping
+
+FROM → WHERE → GROUP BY → HAVING → SELECT
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,172 @@
+-----------------
+Numeric Data type
+-----------------
+
+int/ integer      -> whole numbers : Example: 10, 200, -5
+
+SMALLINT / BIGINT → Smaller or larger range integers
+
+FLOAT / DOUBLE → Approximate decimal values
+
+Example: 10.56789
+
+DECIMAL(p, s) / NUMERIC(p, s)
+-------------------------------
+p = 5 total 5 digits       = 5
+s = 2 digits after decimal = 2
+
+
+FLOAT / DOUBLE → Approximate decimal values
+---------------
+Example: 10.56789
+
+
+-----------------------------
+Character (String) Data Types
+------------------------------
+char(n)     -> fixed length
+varchar(n)  -> Variable length string
+TEXT         → Large text data
+
+-----------------------
+Date & Time Data Types
+------------------------
+
+Date : YYYY:MM:DD
+
+time : HH:MM:SS
+
+DATETIME / TIMESTAMP :Both date and time
+
+------------------
+Boolean Data Type
+------------------
+Usaullay store 0 or 1
+
+BOOLEAN
+
+-----------------
+Binary Data Types
+------------------
+BLOB -> Binary large object
+
+Stores raw binary data
+Not human-readable
+Used for files like:
+Images 🖼️ PDFs 📄  Videos 🎥
+
+Type	Max Size
+-------------------
+TINYBLOB	255 bytes
+BLOB	    65 KB
+MEDIUMBLOB	16 MB
+LONGBLOB	4 GB
+
+
+Char VS VARCHAR
+----------------
+1. CHAR(n) → Fixed Length
+---------------------------
+Stores exactly n characters
+
+If data is shorter, it pads with spaces
+
+📌 Example:
+CHAR(5)
+
+'ABC' → stored as 'ABC ' (2 spaces added)
+'HELLO' → stored as 'HELLO'
+
+👉 Always takes 5 bytes
+
+
+2. VARCHAR(n) → Variable Length
+-------------------------------
+Stores only actual characters
+No extra padding
+📌 Example:
+VARCHAR(5)
+'ABC' → stored as 'ABC'
+'HELLO' → stored as 'HELLO'
+
+👉 Takes only required space + small overhead
+
+
+_____________________________________________________
+| Feature     | CHAR               | VARCHAR         |
+| ----------- | ------------------ | --------------- |
+| Length      | Fixed              | Variable        |
+| Storage     | Always full size   | Only used size  |
+| Padding     | Yes (spaces added) | No              |
+| Performance | Slightly faster    | Slightly slower |
+| Use case    | Fixed values       | Dynamic text    |
+-------------------------------------------------------
+
+
+
+==========================================================================================
+
+DECIMAL (Exact Value)
+----------------------
+Stores numbers exactly as given (no rounding error).
+
+DECIMAL(10,2)
+-------------
+Stores fixed precision
+Best for money, banking, financial data
+
+Ex : It will store exactly 10.25
+
+
+FLOAT (Approximate Value)
+--------------------------
+
+Stores numbers in approximate (binary) format
+
+Can introduce rounding errors
+Used for scientific calculations
+
+👉 Example:
+
+INSERT INTO test VALUES (10.25);
+
+It may internally store something like:
+
+10.249999 or 10.250001
+
+Computers store FLOAT using binary representation, and many decimal
+values cannot be represented exactly in binary.
+
+👉 Same issue you see in programming:
+
+System.out.println(0.1 + 0.2);  // 0.30000000000000004
+
+
+| Feature        | DECIMAL                 | FLOAT           |
+| -------------- | ----------------------- | --------------- |
+| Precision      | Exact                   | Approximate     |
+| Storage        | More space              | Less space      |
+| Speed          | Slower                  | Faster          |
+| Use case       | Money, salary, accounts | Scientific data |
+| Rounding error | ❌ No                    | ✅ Yes           |
+
+=========================================================================================
+
+| Type     | Storage | Range (Signed)                   |
+| -------- | ------- | -------------------------------- |
+| SMALLINT | 2 bytes | -32,768 to 32,767                |
+| INT      | 4 bytes | -2,147,483,648 to 2,147,483,647  |
+| BIGINT   | 8 bytes | -9 quintillion to +9 quintillion |
+
+
+
+
+
+
+
+
+
+
+
+
+

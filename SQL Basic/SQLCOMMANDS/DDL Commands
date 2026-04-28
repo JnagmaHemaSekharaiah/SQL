@@ -1,0 +1,82 @@
+DDL
+----
+
+********* DDL Commands need Object type *************
+
+Example: Drop table <tableName>;
+
+table     -> objet type
+tableName -> object Name
+
+Every DDL commands must have the key word "table" in the query
+
+-------
+Create
+-------
+syntax:
+
+create table Student(
+int id,
+varchar(20) name,
+long salary
+);
+
+
+---------
+Truncate
+---------
+will delete the all the rows and keeps the data strcture.
+
+Syntax :: Truncate table <table Name>
+
+
+-----
+Alter
+-----
+
+(i)add column
+---------------
+alter table table_name
+add column_name datatype;
+
+
+(ii)delete the column
+----------------------
+Alter table table_name
+drop column column_name;
+
+
+(iii)modify the column
+------------------------
+Alter table table_name
+modify  column_name datatype;
+
+-------------------------------------------
+(iV) change the name of column to new column
+----------------------------------------------
+ALTER TABLE table_name
+CHANGE old_column_name new_column_name datatype;
+
+
+-----
+drop
+-----
+drop table table_name;
+
+-------
+rename
+-------
+rename table old_name to new_name;
+
+
+
+
+
+
+
+
+
+
+
+
+

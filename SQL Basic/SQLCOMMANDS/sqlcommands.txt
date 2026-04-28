@@ -1,0 +1,82 @@
+SQL Commands
+------------
+DDL  DML  DQL  TCL  DCL
+
+----
+DDL
+----
+1.Create 2.drop 3.Alter 4.tuncate 5.rename
+
+Key Points
+-----------
+1.DDL deals with strcture not data
+2.Changes are autocommited can not be roll back
+3.It affect the table,schema, indexes
+
+----
+DML
+----
+INSERT UPDATE DELETE
+
+Key points
+----------
+1.It deals with data not strctue.
+2.Chnages are can be rollback (depends on tansections)
+
+---
+DQL
+---
+DQL (Data Query Language) is used to retrieve (fetch) data from the database.
+SELECT
+
+Key Points:
+------------
+DQL is used only for reading data
+It does not modify data
+It mainly consists of the SELECT statement
+
+----
+TCL (Transaction Control Language) is used to manage transactions in a database.
+----
+
+1. COMMIT
+Used to save changes permanently.
+
+2.ROLLBACK
+Used to undo changes (before commit).
+
+3. SAVEPOINT
+Used to create a point within a transaction to rollback partially.
+
+4. ROLLBACK TO SAVEPOINT
+Used to go back to a specific savepoint.
+
+Key Points:
+-----------
+TCL manages transactions (group of operations)
+Helps maintain data consistency
+Works closely with DML (INSERT, UPDATE, DELETE)
+
+
+-----------------------------------
+DCL Commands{DATA CONTROL LANGAGE}
+------------------------------------
+DCL is used to control access/permissions in a database.
+
+1. GRANT
+Used to give permissions to a user.
+REVOKE
+Used to remove permissions from a user.
+
+Key Points:
+----------
+DCL controls who can access what
+It is related to security and authorization
+Works with users and roles
+
+
+
+
+
+
+

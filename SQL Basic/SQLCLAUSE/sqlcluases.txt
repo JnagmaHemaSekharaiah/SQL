@@ -1,6 +1,6 @@
 Order of execution:
 
-FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT
+FROM → WHERE → GROUP BY → AGGREGATEFUNCTIONS → HAVING → SELECT → ORDER BY → LIMIT
 
 
 
@@ -23,6 +23,8 @@ Select From where 'Group by' Haing ORDER BY LIMIT
 -> where support 'and' 'or' 'not' operators
 
 -> works with data from a single table or from multiple after joins.
+
+
 
 --------------
 **Group By**

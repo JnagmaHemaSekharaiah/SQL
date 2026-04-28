@@ -1,0 +1,84 @@
+
+Special Operators
+==================
+🔹 BETWEEN
+------------
+-> Checks range.
+
+-> value Lower order and higher value
+
+Ex :: select name from student where marks between 90(lower) and 1000(higher);
+Ex :: select name from student where name between  "ajay" and "kiran"; // convert into asci values
+
+
+🔹 IN
+-----------
+-> used to check the list of values
+Syntax : WHERE column IN (value1, value2, value3);
+
+
+🔹 LIKE
+-------------------
+-> Pattern matching.
+
+
+%  Any number of characters
+---------------------------------
+-> used only for Strings VARCHAR TEXT CHAR
+
+-> Example :: select * from student where name like 'Aj%';
+
+_ (single character)
+--------------------
+-> used for fixed length
+-> Ex: select name,marks from student where name like 'A___'; // A with 3 characters
+
+
+
+🔹 IS NULL
+
+Checks null values.
+
+SELECT * FROM student
+WHERE marks IS NULL;
+
+
+4️⃣ Arithmetic Operators
+======================
+Used with numbers.
+
+Operator	  Meaning
++	      Addition
+-	      Subtraction
+*	      Multiply
+/	      Divide
+%	      Modulus
+
+Example:
+
+SELECT marks + 5 FROM student;
+
+
+5️⃣ Aggregate Operators (Functions)
+-------------------------------
+
+Used with group data.
+
+Function	Meaning
+COUNT()	Count rows
+SUM()	Add values
+AVG()	Average
+MIN()	Minimum
+MAX()	Maximum
+
+
+6️⃣ Bitwise Operators (Advanced)
+----------------------------
+
+& AND
+
+| OR
+
+^ XOR
+
+~ NOT

@@ -1,0 +1,3 @@
+The HR department has been closed,
+and all employees in HR must be
+removed from the database.

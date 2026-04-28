@@ -1,0 +1,58 @@
+
+Q1: Avg Salary Filter
+👉 Find departments where average salary > 5000
+
+Q2: Count Employees
+👉 Find departments having more than 3 employees
+
+Q3: Salary Filter + Group
+👉 Find departments where:
+employees have salary > 3000
+AND average salary > 4000
+
+Q4: Max Salary per Department
+👉 Show:
+department
+highest salary
+
+Q5: Departments with High Total Salary
+👉 Find departments where:
+total salary > 20000
+
+Q6: Employees Joined After Date
+👉 Find departments where:
+employees joined after '2022-01-01'
+AND count of such employees > 2
+
+Q7: Multiple Conditions
+Find departments where:
+avg salary between 4000 and 7000
+AND max salary > 8000
+
+Q8: Exclude Low Salary
+👉 Find departments where:
+no employee earns less than 3000
+
+💡 Hint: Think carefully (tricky)
+
+Q9: Top Paying Departments
+
+👉 Find departments where:
+average salary is greater than overall average salary
+💡 Hint: Use subquery + HAVING
+
+Q10: Count Distinct
+Find departments having:
+more than 2 unique salary values
+🔥 Bonus (Interview Level Twist)
+
+Q11:
+👉 Find departments where:
+total salary > 10000
+BUT ignore employees with salary < 2000
+
+
+
+
+
+

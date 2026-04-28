@@ -1,0 +1,71 @@
+
+Common Aggregate Functions
+----------------------------
+
+Aggregate functions in SQL are used to perform calculations
+on multiple rows and return a single value.
+
+-------
+Count()
+-------
+select count(*) from table_name;
+
+
+------
+sum()
+-------
+Add values of column
+
+select sum(column) from table_name;
+
+-----
+AVG()
+------
+Finds average value
+
+SELECT AVG(salary) FROM employees;
+
+
+1. Aggregate functions return single value
+-----------------------------------------
+Even if multiple rows exist.
+
+
+2. Ignore null values ()
+----------------------------
+sum avg max min -> ignore null
+count(column)   -> ignores nulls
+count(*)        -> return number of rows
+
+
+3.Used with GROUP BY
+----------------------
+To perform calculations per group
+
+
+4.DISTINCT can be used
+------------------------
+SELECT COUNT(DISTINCT department) FROM employees;
+
+
+5.Combine with conditions
+------------------------
+SELECT MAX(salary)
+FROM employees
+WHERE department = 'IT';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
