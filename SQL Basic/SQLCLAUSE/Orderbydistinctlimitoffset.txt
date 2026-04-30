@@ -1,0 +1,117 @@
+
+FROM
+WHERE
+GROUP BY
+HAVING
+SELECT
+DISTINCT ORDER BY LIMIT
+---------------------------------------------------------
+DISTINCT
+---------------------------------------------------------
+removes duplicate values form the result
+
+SELECT DISTINCT department
+FROM employees;
+
+output only unique elements
+
+important columns
+-> Works on columns
+-> Can be used with multiple columns
+
+SELECT DISTINCT department, job_role FROM employees;
+
+--------------------------------------------------------
+ORDER BY
+--------------------------------------------------------
+Sort the results by assending or descenading order
+
+SELECT * FROM employees
+ORDER BY salary;
+
+Defalut Assending
+
+Descending : Order by salary DESC;
+
+mutiple columns sorting
+
+SELECT * FROM employees
+ORDER BY department ASC, salary DESC;
+
+First sorts by department, then salary
+
+
+Important Points ⚡
+-----------------
+Comes last in query (before LIMIT)
+Can sort using:
+column name
+column position (ORDER BY 2)
+aggregate function
+
+-----------------------------------------------
+LIMIT / TOP
+------------------------------------------------
+Restricts number of rows returned
+
+SELECT * FROM employees
+LIMIT 5;
+
+return first 5 rows
+
+
+Limit with offset
+-----------------
+SELECT * FROM employees LIMIT 5 OFFSET 5;
+
+LIMIT is mainly used for:
+Pagination
+Top N records (Top 5, Top 10, etc.)
+
+
+
+--------------------------------------------
+OFFSET
+---------------------------------------------
+
+offset : skipping certain number of rows before returning the results
+OFFSET = number of rows to skip
+
+SELECT * FROM employees
+LIMIT 5 OFFSET 3; //Skip first 3 rows  Then return next 5 rows
+
+🧠 Easy Way to Remember:
+
+👉 OFFSET = starting position (how many to ignore)
+👉 LIMIT = how many to take
+
+🔥 Important Tip:
+
+Always use with ORDER BY:
+
+SELECT * FROM employees
+ORDER BY id
+LIMIT 5 OFFSET 5;
+
+👉 Otherwise result order can be unpredictable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -37,6 +37,22 @@ Q3: Salary Filter + Group
 
 //Find departments where: employees have salary > 3000 AND average salary > 4000
 
+select department from employees
+group by department
+having sum(salary)>3000 and avg(salary) > 4000;
+
+//Q4: Max Salary per Department
+   👉 Show:department highest salary
+
+   select department,max(salary) from employees
+   group by department;
+
+//Q5: Departments with High Total Salary
+  👉 Find departments where: total salary > 20000
+
+select department,sum(salary) from employees
+group by department
+having sum(salary)>20000;
 
 
 

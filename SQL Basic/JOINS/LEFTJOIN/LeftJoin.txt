@@ -1,0 +1,12 @@
+LEFT JOIN (LEFT OUTER JOIN)
+
+👉 Returns:
+
+All rows from left table
+Matching rows from right table
+If no match → NULL
+
+SELECT e.name, d.department_name
+FROM employees e
+LEFT JOIN departments d
+ON e.dept_id = d.id;

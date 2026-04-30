@@ -1,0 +1,41 @@
+CROSS JOIN
+-----------
+CROSS JOIN returns all possible combinations of rows from two tables.
+
+It is also called a Cartesian Product
+
+
+Simple Understanding
+
+If:
+
+Table A has 3 rows
+Table B has 4 rows
+
+👉 Result = 3 × 4 = 12 rows
+
+
+When not to use
+-----------------
+Large tables -> Huge results(Performance Issue)
+
+👉 Difference between:
+
+INNER JOIN → matching rows
+CROSS JOIN → all combinations
+
+
+-----------------------------------------------------
+CROSS JOIN + WHERE can sometimes act like INNER JOIN
+------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

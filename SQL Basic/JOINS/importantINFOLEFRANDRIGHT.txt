@@ -1,0 +1,44 @@
+select e.name,d.department_name,salary
+from employees e
+left join  departments d
+on d.dept_id= e.dept_id;
+
+select e.name,d.department_name,salary
+from employees e
+right join  departments d
+on d.dept_id= e.dept_id;
+
+How to Identify LEFT and RIGHT Table
+-------------------------------------
+👉 Rule is very simple:
+
+The table written before JOIN → LEFT table
+The table written after JOIN  → RIGHT table
+
+
+📌 Your Query 1 (LEFT JOIN)
+
+SELECT e.name, d.department_name, salary
+FROM employees e
+LEFT JOIN departments d
+ON d.dept_id = e.dept_id;
+
+👉 Identify tables:
+employees e   → ✅ LEFT table
+departments d → ✅ RIGHT table
+
+👉 “Give me ALL employees, and match departments if available”
+
+All employees will come
+If no matching department → department_name = NULL
+
+📌 Your Query 2 (RIGHT JOIN)
+
+SELECT e.name, d.department_name, salary
+FROM employees e
+RIGHT JOIN departments d
+ON d.dept_id = e.dept_id;
+
+👉 Identify tables:
+employees e → LEFT table
+departments d → RIGHT table

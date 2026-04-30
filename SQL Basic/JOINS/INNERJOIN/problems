@@ -1,0 +1,75 @@
+Level 1 (Basic INNER JOIN)
+
+Q1:
+
+👉 Get employee names with their department names
+
+Output: name, department_name
+
+Q2:
+
+👉 Get all employees working in "IT" department
+
+Q3:
+
+👉 Show employee name and salary along with department name
+
+Q4:
+
+👉 Count total employees in each department
+
+⚡ Level 2 (Moderate)
+=====================
+
+Q5:
+
+👉 Find employees earning more than 5000 with department name
+
+Q6:
+
+👉 Find departments having more than 2 employees
+
+Q7:
+
+👉 Get highest salary employee in each department
+
+Q8:
+
+👉 Show employees and their project names
+
+(Hint: employees → departments → projects)
+
+🔥 Level 3 (Interview Level)
+Q9:
+
+👉 Find departments where average salary > 5000
+
+Q10:
+
+👉 Find employees whose salary is greater than average salary of their department
+
+Q11:
+
+👉 Get second highest salary in each department
+
+Q12:
+
+👉 Find departments where all employees salary > 3000
+
+🧠 Level 4 (Tricky / Real Interview)
+Q13:
+
+👉 Find employees who work in departments that have projects assigned
+
+Q14:
+
+👉 Find employees who are not assigned to any project
+(Inner join won’t work directly → think carefully)
+
+Q15:
+
+👉 Get department with maximum number of employees
+
+Q16:
+
+👉 Find employees who earn more than overall company average salary

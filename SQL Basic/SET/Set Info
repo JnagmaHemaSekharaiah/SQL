@@ -1,0 +1,75 @@
+
+SET Operations (Very Important)
+---------------------------------
+These are used to combine multiple result sets
+
+----------
+🔹 UNION
+----------
+👉 Combines results and removes duplicates
+
+SELECT name FROM emp1
+UNION
+SELECT name FROM emp2;
+
+--------------
+🔹 UNION ALL
+--------------
+
+👉 Combines results and keeps duplicates
+
+SELECT name FROM emp1
+UNION ALL
+SELECT name FROM emp2;
+
+---------------
+🔹 INTERSECT
+---------------
+👉 Returns common rows
+
+SELECT name FROM emp1
+INTERSECT
+SELECT name FROM emp2;
+
+----------------
+EXCEPT / MINUS
+-----------------
+returns rows from one query not in another
+
+
+Important Distinction
+
+👉 UNION is NOT a JOIN
+
+UNION → combines rows vertically (one result below another)
+JOIN  → combines columns horizontally (side by side)
+
+UNION (vertical)
+------------------
+Table1
+A
+B
+
+Table2
+C
+D
+
+Result:
+A
+B
+C
+D
+
+
+JOIN (horizontal)
+------------------
+Table1      Table2
+A  10       A  IT
+
+Result:
+A  10  IT
+
+UNION is a set operator used to combine result sets of multiple SELECT
+queries into a single result.
+
+

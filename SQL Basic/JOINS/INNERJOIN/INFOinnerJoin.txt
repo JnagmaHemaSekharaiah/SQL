@@ -1,0 +1,10 @@
+INNER JOIN
+
+👉 Returns only matching records from both tables
+
+SELECT e.name, d.department_name
+FROM employees e
+INNER JOIN departments d
+ON e.dept_id = d.id;
+
+✅ Only rows where match exists in both tables
