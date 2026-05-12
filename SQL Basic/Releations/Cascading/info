@@ -1,0 +1,22 @@
+Cascading = automatic action on child table when parent table is
+updated or deleted
+
+It is used in FOREIGN KEY constraints
+
+CREATE TABLE orders (
+    order_id INT,
+    customer_id INT,
+    FOREIGN KEY (customer_id)
+    REFERENCES customers(id)
+    ON DELETE CASCADE
+);
+
+Types of Cascading :
+
+✅ ON DELETE CASCADE
+
+👉 When parent row is deleted → child rows also deleted automatically
+
+✅ ON UPDATE CASCADE
+
+👉 When parent key is updated → child table updates automatically

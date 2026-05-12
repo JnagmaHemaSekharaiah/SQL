@@ -1,0 +1,33 @@
+What is Primary key important points and rules
+
+
+A Primary Key (PK) uniquely identifies each row in a table.
+ Think of it as the table’s identity column.
+
+1.Uniqueness (Mandatory) :: No duplicate values allowed
+
+2.NOT NULL (Mandatory)   :: Cannot contain NULL
+
+3. Only one Primary key per table :: But it can be composite (multiple columns)
+
+4.Automatically Indexed
+DB creates a unique index for fast lookup
+👉 Improves performance of searches & joins
+
+5.Stable (Should not change)
+Avoid updating PK values frequently
+👉 Can break relationships with other tables
+
+6.Used for Relationships (Foreign Key)
+
+
+
+
+
+
+
+
+
+
+
+

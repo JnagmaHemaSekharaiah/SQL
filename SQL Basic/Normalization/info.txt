@@ -1,0 +1,59 @@
+Normalization
+-------------
+It is a process of organizing data into tables
+
+Data duplication avoid
+data integrity can achive
+update becomes easier and safer
+
+Normalization = Breaking big table into smaller tables
+
+Without Normalization
+
+Without normalization:
+
+Data gets repeated
+Updates become error-prone
+Leads to anomalies:
+Insert anomaly
+Update anomaly
+Delete anomaly
+
+
+Types
+
+1 NF
+----
+
+Each column contains atomic (single) value and no repeating groups
+
+Rules of 1NF
+-------------
+✔️ Atomic values
+✔️ No repeating columns
+✔️ Unique rows (primary key recommended)
+
+
+🔑 Easy Memory Trick
+1NF = 1 value per cell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

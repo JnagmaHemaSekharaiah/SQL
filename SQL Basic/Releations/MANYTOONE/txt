@@ -1,0 +1,24 @@
+Many-to-One (M:1)
+------------------
+
+Opposite of One-to-Many
+
+Many employees → One department
+
+Many records in A ↔ Many records in B
+
+Example:
+Students ↔ Courses
+One student can enroll in many courses
+One course can have many students
+Solution:
+
+👉 Use junction (bridge) table
+
+students (id, name)
+courses (id, course_name)
+
+student_course (student_id, course_id)
+Key Point:
+No direct relation
+Always use third table

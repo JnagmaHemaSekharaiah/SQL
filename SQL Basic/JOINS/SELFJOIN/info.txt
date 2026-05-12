@@ -1,0 +1,43 @@
+Slef Join
+----------
+Self Join means joining table with it's Self
+Used When
+Data in one row is releated to another row in the same table
+
+When using self join on employees, always use aliases:
+Syntax::
+FROM employees e1
+JOIN employees e2
+ON e1.manager_id = e2.emp_id
+
+
+SELECT e.name AS Employee, m.name AS Manager
+FROM employees e
+LEFT JOIN employees m
+ON e.manager_id = m.emp_id;
+
+
+CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    salary INT,
+    manager_id INT,
+    dept_id INT
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

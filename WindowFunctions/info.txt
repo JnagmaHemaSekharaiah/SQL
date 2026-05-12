@@ -1,0 +1,50 @@
+
+Syntax :
+
+FUNCTION_NAME() OVER(...)
+
+Here Over() defines window area
+
+Window function =“Perform calculations across related rows while still showing every row.”
+
+PARTITION BY
+---------------
+it creates a group
+similar to :
+Group by
+But does NOT combine rows.
+
+
+ORDER BY :
+-----------
+Defines row order inside each partition
+
+ties = multiple rows having the same value in ranking or sorting.
+
+
+rank()       ->   Ranking with skipped numbers on ties
+DENSE_RANK() ->   Ranking without gaps
+ROW_NUMBER() ->   Gives unique sequential numbers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

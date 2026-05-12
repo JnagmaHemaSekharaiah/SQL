@@ -1,0 +1,22 @@
+
+2 NF
+------
+
+A table is in 2NF if:
+-----------------------
+-> It is already in 1NF ✔️
+-> No partial dependency exists
+
+
+Partial Dependency
+---------------------
+When a column depends on only part of composite primary key, not on the whole key
+
+Key Idea
+--------
+All non-key columns must be depend on the Full Primary key
+
+
+2NF = 1NF + Full dependency on key
+
+

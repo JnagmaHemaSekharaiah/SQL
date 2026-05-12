@@ -1,0 +1,12 @@
+In SQL Releations are define how tables are connected to each other using keys
+(primary key and foreign key)
+
+Advantanges of  Releations are
+
+-> Avoid data duplication
+-> Maintain Data consistency
+-> follow normalization
+
+Types
+-----
+1)one to one 2)ont-to-manay 3)Many to one 4) manay to many

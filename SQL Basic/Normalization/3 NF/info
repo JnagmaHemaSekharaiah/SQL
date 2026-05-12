@@ -1,0 +1,15 @@
+
+3 NF
+-----
+A table is in 3 NF if
+
+-> Already in 2 NF
+-> No Transitive dependency exsits
+
+Transitive dependency : A non key column depends on another non-key column
+
+
+KEY IDEA : Non-key columns should depend only on the primary key,
+not on other non-key columns
+
+
