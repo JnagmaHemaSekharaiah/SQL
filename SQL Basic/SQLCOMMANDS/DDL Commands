@@ -3,6 +3,8 @@ DDL
 
 ********* DDL Commands need Object type *************
 
+Create Alter modify drop truncate
+
 Example: Drop table <tableName>;
 
 table     -> objet type
@@ -36,8 +38,7 @@ Alter
 
 (i)add column
 ---------------
-alter table table_name
-add column_name datatype;
+alter table table_name add column_name datatype;
 
 
 (ii)delete the column

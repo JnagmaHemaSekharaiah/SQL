@@ -55,7 +55,7 @@ Not human-readable
 Used for files like:
 Images 🖼️ PDFs 📄  Videos 🎥
 
-Type	Max Size
+Type	   Max Size
 -------------------
 TINYBLOB	255 bytes
 BLOB	    65 KB
